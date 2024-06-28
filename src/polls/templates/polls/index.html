@@ -17,7 +17,7 @@
     <ul class="space-y-1">
     {% for question in latest_question_list %}
         <li>
-            <a href="{% url 'question' question.id %}" class="text-blue-500 hover:underline">{{ question.question_text }}</a>
+            <a href="{% url 'polls:question' question.id %}" class="text-blue-500 hover:underline">{{ question.question_text }}</a>
         </li>
     {% endfor %}
     </ul>
